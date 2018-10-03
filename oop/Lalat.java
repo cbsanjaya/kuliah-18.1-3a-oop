@@ -10,6 +10,10 @@ public class Lalat extends Actor
 {
     int kecepatan = 1;
     
+    public Lalat() {
+        getImage().scale(30, 30);
+    }
+    
     /**
      * Act - do whatever the Lalat wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
