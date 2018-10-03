@@ -14,6 +14,18 @@ public class Semut extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        if ( Greenfoot.isKeyDown("up") ) {
+            move(2);
+        } else
+        if ( Greenfoot.isKeyDown("down") ) {
+            move(-1);
+        }
+        
+        if ( Greenfoot.isKeyDown("left") ) {
+            turn(-4);
+        } else
+        if ( Greenfoot.isKeyDown("right") ) {
+            turn(4);
+        }
+    }
 }

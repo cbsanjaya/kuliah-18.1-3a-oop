@@ -18,9 +18,13 @@ public class Dinding extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
         
-        Semut semut = new Semut();
+        // Buat Obyek Semut dan tambahkan ke World
+        Semut semut = new Semut();        
+        addObject(semut, 200, 200);
         
-        addObject(semut, 300, 200);
+        // Buat Obyek Lalat dan tambahkan ke World
+        Lalat lalat = new Lalat();
+        addObject(lalat, 400, 200);
         
     }
 
