@@ -27,5 +27,23 @@ public class Semut extends Actor
         if ( Greenfoot.isKeyDown("right") ) {
             turn(4);
         }
+        
+        if ( "space".equals( Greenfoot.getKey() ) ) {
+            tembak();
+        }
     }
+    
+    public void tembak() 
+    {
+        // membuat objek peluru
+        PeluruSemut peluru = new PeluruSemut();
+        
+        World dinding = getWorld();
+        // add object to world posisinya di semut 
+        dinding.addObject(peluru, getX(), getY());
+        
+        // menyesuaikan arah peluru sesuai arah semut
+        peluru.setRotation(getRotation());
+    }
+    
 }
