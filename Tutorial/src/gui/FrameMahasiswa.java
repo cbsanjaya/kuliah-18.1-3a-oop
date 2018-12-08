@@ -22,8 +22,6 @@ public class FrameMahasiswa extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         
         isNew = true;
-        
-        btnSimpan.setEnabled(false);        
     }
 
     /**
@@ -212,7 +210,7 @@ public class FrameMahasiswa extends javax.swing.JFrame {
         tfNim.setText(nim);
         tfNama.setText(nama);
 
-        this.isNew = false;        
+        this.isNew = false;
         btnTambah.setEnabled(false);
         btnSimpan.setEnabled(true);
     }//GEN-LAST:event_btnEditActionPerformed
